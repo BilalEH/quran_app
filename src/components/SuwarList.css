@@ -1,0 +1,106 @@
+.cont{
+    /* direction: rtl; */
+    width: 350px;
+    height: 100%;
+    display: flex;
+    background-color: #F5F5F5;
+    padding-left:5px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+.cont{
+    cursor: pointer;
+}
+
+.cont::-webkit-scrollbar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background:#F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:#F99417;
+    border-radius: 20px;
+}
+
+.sura{
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    height: 50px;
+    border-left: 5px solid transparent;
+    background-color: #F5F5F5;
+    transition: .2s;
+    position: relative;
+    overflow: hidden;
+    color: #363062;
+    border-left: #363062 5px solid;
+    padding: 25px;
+}
+
+.sura:hover {
+    border-left-color: #F99417 !important;
+    transform: translateX(10px) !important;
+} 
+.ruer{
+    border-left-color: #F99417 !important;
+    background-color: #363062 !important;
+    color: #F5F5F5 !important;
+}
+
+
+/* .sura:hover{
+    border-left-color: #2ca4ab;
+} */
+
+
+
+.local_div{
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+/* .hover_icon{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    backdrop-filter: brightness(0.5);
+    transition: .2s;
+    transition-delay: 0.25s;
+} */
+
+.lading{
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ebf9fa77;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}

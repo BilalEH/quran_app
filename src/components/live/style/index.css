@@ -1,0 +1,50 @@
+
+.globalCont{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+}
+.eleCont{
+    padding: 60px;
+    background-color: #ebf9fa;
+    border-radius: 20px;
+    filter: drop-shadow(6px 15px 0px #c3d3d5);
+}
+.title_s{
+    font-size: 2.5rem;
+    font-family: fantasy;
+    text-align: center;
+    text-transform: uppercase;
+}
+.eleCont div{
+    width: 800px;
+    border: 5px solid #2ca4ab;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.channels{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    z-index: 100000000000000000;
+}
+
+
+.contLive{
+    width: 100%;
+    height: calc(100vh - 56px);
+    position: relative;
+    overflow: hidden;
+}
+/* ----- */
+
+

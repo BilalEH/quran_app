@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+import Sowar_Home from './components/sowar/index';
+import Header from './components/Header';
+import Live_Home from './components/live/index';
+import Radio_Home from './components/radio/index';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Header/>
+        <Routes>
+          <Route path="/"  element={<Sowar_Home/>}/>
+          <Route path="/Live"  element={<Live_Home/>}/>
+          <Route path="/Radio"  element={<Radio_Home/>}/>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
